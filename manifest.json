@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Conventional Comments Suggestions",
+    "version": "1.0",
+    "description": "Auto-suggests convention comments format when making comments in GitHub",
+    "homepage_url": "http://www.crabula.com",
+    "icons": {
+      "64": "icons/icon-ccs.svg",
+      "96": "icons/icon-ccs.svg"
+    },  
+    "content_scripts": [
+      {
+        "matches": ["https://github.com/eversport/eversports/pull/*/files"],
+        "js": ["conventional.js"]
+      }
+    ]
+  
+  }
